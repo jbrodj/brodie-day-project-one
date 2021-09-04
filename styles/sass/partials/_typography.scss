@@ -5,8 +5,21 @@
 
 body {
     font-family: 'Chathura', sans-serif;
+    font-weight: 700;
 }
 
 h1 {
     font-family: 'Tulpen One', cursive;
+}
+
+h1, p {
+    font-weight: 400;
+}
+
+.mainNav li a {
+    text-transform: uppercase;
+}
+
+a {
+    color: red;
 }
