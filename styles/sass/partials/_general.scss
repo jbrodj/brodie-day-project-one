@@ -4,16 +4,44 @@
 // black = #111010
 // red = #bhf2603
 // dark red = #220303
-// orange = #f8327
+// orange = #ff8327
 
 
-
+html {
+    font-size: 125%;
+}
 
 body {
     background-color: #111010;
     color: #fff;
 }
 
+.wrapper {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 0;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
 .accentColor {
     color: #ff8837;
+}
+
+.moreLink {
+    background-color: #bf2603;
+    padding: 0.25rem 1.5rem;
+    // margin-top: 20rem;
+}
+
+.infoCopy p, .eventsSection p, .hostPartySection p {
+    margin-bottom: 1rem;
+}
+
+.copyright p {
+        text-align: center;
 }

@@ -14,82 +14,124 @@
 </head>
     <body>
         <header>
-            <nav class="mainNav contactNav">
+            <nav class="mainNav">
                 <ul>
                     <li class="logo">Bar-One</li>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./index.html#aboutSection">About</a></li>
+                    <li class="home"><a href="./index.html">Home</a></li>
+                    <li class="about"><a href="./index.html#aboutSection">About</a></li>
                     <li><a href="./blog.html">Blog</a></li>
                     <li><a href="./contact.html">Contact</a></li>
                 </ul>
             </nav>
-            <h1>Bar-One</h1>
-            <h2>Place to be</h2>
+            <div class="titleContainer">
+                <div>
+                    <h1>Bar-One</h1>
+                    <h2>Place to be</h2>
+                </div>
+            </div>
+            <div class="headerImg">
+                <img src="./assets/header-box.jpg" alt="">
+            </div>
         </header>
         <main>
             <section class="aboutSection" id="aboutSection">
                 <div class="wrapper">
                     <ul>
                         <li class="aboutCopyContainer">
-                            <h3>New space</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis odit quod, velit totam a laboriosam, dolorem qui
-                                sed obcaecati eaque quisquam fuga eveniet aut dicta?</p>
+                            <div class="circleAccent">
+                                <i></i>
+                            </div>
+                            <div class="aboutCopy">
+                                <h3>New space</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis odit quod, velit totam a laboriosam, dolorem qui
+                                    sed obcaecati eaque quisquam fuga eveniet aut dicta?</p>
+                            </div>
                         </li>
                         <li class="aboutCopyContainer">
-                            <h3>Community</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus corrupti molestiae repellat beatae totam eaque
+                            <div class="circleAccent">
+                                <i></i>
+                            </div>
+                            <div class="aboutCopy">
+                                <h3>Community</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus corrupti molestiae repellat beatae totam eaque
                                 laudantium velit voluptatum suscipit reprehenderit obcaecati, maxime unde, doloribus quam?</p>
+                            </div>
                         </li>
                         <li class="aboutCopyContainer">
-                            <h3>Blog</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis veniam culpa eveniet sint, aut eum harum! Officiis
+                            <div class="circleAccent">
+                                <i></i>
+                            </div>
+                            <div class="aboutCopy">
+                                <h3>Blog</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis veniam culpa eveniet sint, aut eum harum! Officiis
                                 commodi fuga architecto quisquam iusto eveniet eaque saepe!</p>
+                            </div>
                         </li>
                         <li class="aboutCopyContainer">
-                            <h3>Get in Touch</h3>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi labore nobis, officiis laborum minus mollitia unde dolorum explicabo, recusandae rerum molestiae neque qui ex omnis.</p>
+                            <div class="circleAccent">
+                                <i></i>
+                            </div>
+                            <div class="aboutCopy">
+                                <h3>Get in Touch</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi labore nobis, officiis laborum minus mollitia unde dolorum explicabo, recusandae rerum molestiae neque qui ex omnis.</p>
+                            </div>
                         </li>
                     </ul>
                 </div>
             </section>
 
-            <section>
-                <ul>
-                    <li class="infoContainer">
-                        <img src="./assets/left-image.jpg" alt="Bar counter area lit by an array of tungsten bulbs with display of bottles and glasses in the background.">
-                        <h3>Plan Ahead</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa iste nostrum inventore, quos, voluptatem quasi facere optio dignissimos tempora debitis magni neque velit cum aliquid unde, fugiat eveniet accusantium minima doloribus!</p>
-                        <a href="" class="moreLink">Read More</a>
-                    </li>
-                    <li class="infoContainer">
-                        <img src="./assets/right-image.jpg" alt="Bar counter area with two patrons sitting on stools with out of focus table settings in the foreground.">
-                        <h3>New Locations</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium itaque consequatur recusandae saepe repudiandae expedita! Reprehenderit delectus distinctio illo nesciunt. Architecto aliquid tenetur ex at unde obcaecati esse, perspiciatis necessitatibus consectetur?</p>
-                        <a href="" class="moreLink">Reat More</a>
-                    </li>
-                </ul>
+            <section class="planningInfoSection">
+                    <ul>
+                        <li class="infoContainer">
+                            <img src="./assets/left-image.jpg" alt="Bar counter area lit by an array of tungsten bulbs with display of bottles and glasses in the background." class="infoImgTop">
+                            <div class="infoCopy infoCopy1">
+                                <h3>Plan Ahead</h3>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa iste, quos, voluptatem quasi facere optio dignissimos tempora debitis magni neque velit cum aliquid unde, fugiat eveniet accusantium minima doloribus!</p>
+                                <a href="" class="moreLink">Read More</a>
+                            </div>
+                        </li>
+                        <li class="infoContainer">
+                            <img src="./assets/right-image.jpg" alt="Bar counter area with two patrons sitting on stools with out of focus table settings in the foreground." class="infoImgBottom">
+                            <div class="infoCopy infoCopy2">
+                                <h3>New Locations</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur et adipisicing elit. Praesentium itaque saepe unde repudiandae expedita! Reprehenderit delectus distinctio illo nesciunt. Architecto aliquid tenetur ex at unde obcaecati esse, perspiciatis necessitatibus consectetur?</p>
+                                <a href="" class="moreLink">Read More</a>
+                            </div>
+                        </li>
+                    </ul>
             </section>
 
             <section class="hostPartySection">
-                <h3 class="accentColor"></h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus expedita minima rem corporis maxime illo, accusamus doloribus dolorum voluptatum nobis officiis nesciunt est ad, error quaerat deleniti quo iste eligendi qui numquam itaque cupiditate maiores. Soluta perferendis aspernatur tempora quas optio nihil accusamus quis quaerat repellendus.</p>
-                <a href="" class="moreLink">Find Out More</a>
-            </section>
-            <section class="eventsSection">
-                <div class="eventsImg">
-                    <img src="./assets/small-box-image.jpg" alt="Close up of two people enjoying a laugh and cocktails.">
+                <div class="wrapper">
+                    <h3 class="accentColor">Want to host a party?</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus expedita minima rem corporis maxime illo, accusamus doloribus dolorum voluptatum nobis officiis nesciunt est ad, error quaerat deleniti quo iste eligendi qui numquam itaque cupiditate maiores. Soluta perferendis aspernatur tempora quas optio nihil accusamus quis quaerat repellendus.</p>
+                    <a href="" class="moreLink">Find Out More</a>
                 </div>
-                <h3 class="accentColor">Events</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint laudantium optio aut consequuntur repudiandae incidunt, sit dolorem, in soluta dolor labore minima facilis, facere fuga. Aperiam corrupti commodi ab id accusantium earum exercitationem dolorem alias consequatur culpa, unde delectus aliquam sapiente laborum magni numquam illo ipsa quod. Nam error praesentium nulla consequuntur rerum.</p>
-                <a href="" class="moreLink">Find Out More</a>
+            </section>
+
+            <div class="breakBanner"></div>
+
+            <section class="eventsSection">
+                <div class="wrapper">
+                    <div class="eventsImg">
+                        <img src="./assets/small-box-image.jpg" alt="Close up of two people enjoying a laugh and cocktails.">
+                    </div>
+                    <div class="eventsCopy">
+                        <h3 class="accentColor">Events</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint laudantium optio aut consequuntur repudiandae incidunt, sit dolorem, in soluta dolor labore minima facilis, facere fuga. Aperiam corrupti commodi ab id accusantium earum exercitationem dolorem alias consequatur culpa, unde delectus aliquam sapiente laborum magni numquam illo ipsa quod. Nam error praesentium nulla consequuntur rerum.</p>
+                        <a href="" class="moreLink">Find Out More</a>
+                    </div>
+                </div>
             </section>
 
             <section class="gallery">
-                <ul>
-                    <li><img src="./assets/gallery-image-1.jpg" alt="Bar display with bottles and glasses organized on shelves."></li>
-                    <li><img src="./assets/gallery-image-2.jpg" alt="Close up of a plated meal of a hamburger, fries, and dips."></li>
-                    <li><img src="./assets/gallery-image-3.jpg" alt="Fancy cocktail sitting on the bartop."></li>
-                </ul>
+                <div class="wrapper">
+                    <ul>
+                        <li><img src="./assets/gallery-image-1.jpg" alt="Bar display with bottles and glasses organized on shelves."></li>
+                        <li><img src="./assets/gallery-image-2.jpg" alt="Close up of a plated meal of a hamburger, fries, and dips."></li>
+                        <li><img src="./assets/gallery-image-3.jpg" alt="Fancy cocktail sitting on the bartop."></li>
+                    </ul>
+                </div>
             </section>
         </main>
         <footer>

@@ -8,18 +8,66 @@ body {
     font-weight: 700;
 }
 
-h1 {
+h1, .logo, .moreLink, button[type="submit"] {
     font-family: 'Tulpen One', cursive;
 }
 
-h1, p {
+h1, p, .moreLink {
     font-weight: 400;
+}
+
+h1 {
+    font-size: 13.07rem;
+    letter-spacing: 2.4px;
+    color: #ff8327;
+}
+
+h2 {
+    font-size: 4.16rem;
+    line-height: 4.735rem;
+    letter-spacing: 0.11rem;
+}
+
+h3 {
+    font-size: 3.4rem;
+    line-height: 2.9rem;
+    letter-spacing: 0.11rem;
+}
+
+p {
+    font-size: 1.95rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.095rem;
+}    
+
+
+.logo {
+    font-size: 3rem;
+    line-height: 3.5rem;
+    // letter-spacing: 0.1rem;
 }
 
 .mainNav li a {
     text-transform: uppercase;
+    font-size: 1.9rem;
 }
 
-a {
-    color: red;
+.moreLink {
+    font-size: 1.9rem;
+    letter-spacing: 0.1rem;
 }
+
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p {
+    line-height: 3rem;
+    }
+}
+
+
+
+

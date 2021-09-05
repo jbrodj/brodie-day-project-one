@@ -1,0 +1,182 @@
+// Header
+
+header {
+    background: url(../../../assets/home-image-1.jpg) center;
+    background-size: cover;
+    height: 100vh;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.mainNav, .titleContainer {
+    z-index: 1;
+}
+
+.mainNav ul {
+    display: flex;
+    justify-content: space-between;
+    max-width: 50%;
+    margin: 0 auto;
+    align-items: flex-end;
+
+    .home, .about {
+        order: -1;
+    }
+}
+
+.titleContainer {
+    height: 100%;
+    width: auto;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.headerImg {
+    position: absolute;
+    bottom: -10%;
+    right: 0;
+    width: 50%;
+}
+
+h2 {
+    margin: -4rem 0 0 0.3rem;
+}
+
+
+
+// About Section
+
+.aboutSection {
+    padding: 2rem;
+    .wrapper {
+        display: flex;
+        ul {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+}
+
+.aboutSection li {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 50%;
+    
+    .aboutCopy {
+        padding: 0.1rem 1rem;
+    }
+}
+
+.circleAccent {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    background-color: #bf2603;
+    flex-shrink: 0;
+}
+
+
+
+// Planning/Info Section
+
+.planningInfoSection {
+    background-color: #220303;
+    
+    li {
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem 0;
+
+        .infoImgTop{
+            box-shadow: 20px 20px 0px -5px #ff8327;
+            margin-top: -4rem;
+            width: 40%;
+        }
+        .infoImgBottom {
+            box-shadow: -20px 20px 0px -5px #ff8327;
+            margin-bottom: -4rem;
+        }
+        .infoCopy, .infoImgTop, .infoImgBottom {
+            width: 42.5%;
+        }
+        .infoCopy {
+            display: flex;
+            flex-direction: column;
+        }
+        .infoCopy1 {
+            padding-right: 7rem;
+            align-items: flex-start;
+        }
+        .infoCopy2 {
+            padding-left: 7rem;
+            align-items: flex-end;
+        }
+    
+    }
+
+    li:last-child {
+        flex-direction: row-reverse;
+    }
+}
+
+
+// Host a Party Section
+
+.hostPartySection {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+
+// Banner
+
+.breakBanner {
+    background-image: url(../../../assets/banner-image.jpg);
+    background-size: cover;
+    height: 50vh;
+}
+
+
+
+// Events Section
+
+.eventsSection .wrapper {
+    display: flex;
+    padding: 2rem 0;
+    
+    .eventsCopy {
+        width: 75%;
+        padding-left: 4rem;
+    }
+    .eventsImg {
+        width: 25%
+    }
+}
+
+
+
+// Gallery Section 
+
+.gallery {
+    background-color: #220303;
+    width: 100%;
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+
+        li {
+            width: calc(100% / 3 - 1rem);
+        }
+    }
+}
+
+
+
+// Footer
+
