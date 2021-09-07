@@ -1,10 +1,4 @@
 
-// Colors 
-// white = #fff
-// black = #111010
-// red = #bhf2603
-// dark red = #220303
-// orange = #ff8327
 
 
 html {
@@ -13,12 +7,12 @@ html {
 
 body {
     background-color: #111010;
-    color: #fff;
+    color: $textColor;
 }
 
 .wrapper {
-    width: 80%;
-    max-width: 1200px;
+    width: 90%;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 4rem 0;
 }
@@ -28,18 +22,30 @@ img {
     display: block;
 }
 
-.accentColor {
-    color: #ff8837;
+.accentColor,
+a:hover,
+a:focus {
+    color: $accentColor;
 }
 
 .moreLink {
-    background-color: #bf2603;
+    background-color: $buttonColor;
     padding: 0.25rem 1.5rem;
     // margin-top: 20rem;
+    :hover {
+        background-color: $textColor;
+    }
+}
+
+.moreLink:hover,
+.moreLink:focus {
+    color: $background2;
+    background-color: $textColor;
 }
 
 .infoCopy p, .eventsSection p, .hostPartySection p {
-    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .copyright p {

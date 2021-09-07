@@ -17,12 +17,38 @@ header {
 .mainNav ul {
     display: flex;
     justify-content: space-between;
-    max-width: 50%;
+    width: 50%;
+    max-width: 650px;
     margin: 0 auto;
     align-items: flex-end;
 
-    .home, .about {
-        order: -1;
+    .home {
+        order: 1;
+    } 
+    .about {
+        order: 2;
+    }
+
+    .logo {
+        order: 3;
+        min-width: 120px;
+        text-align: center;
+    }
+
+    .blog {
+        order: 4;
+    }
+
+    .contact {
+        order: 5;
+    }
+
+    a, .logo {
+        padding: 0 calc(1vw);
+    }
+
+    .logo {
+        margin-bottom: -0.5rem;
     }
 }
 
@@ -66,6 +92,7 @@ h2 {
     align-items: flex-start;
     justify-content: flex-start;
     width: 50%;
+    padding: 2rem 0;
     
     .aboutCopy {
         padding: 0.1rem 1rem;
@@ -86,43 +113,48 @@ h2 {
 
 .planningInfoSection {
     background-color: #220303;
+}
     
-    li {
-        display: flex;
-        justify-content: space-between;
-        padding: 2rem 0;
+.infoContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
 
-        .infoImgTop{
-            box-shadow: 20px 20px 0px -5px #ff8327;
-            margin-top: -4rem;
-            width: 40%;
-        }
-        .infoImgBottom {
-            box-shadow: -20px 20px 0px -5px #ff8327;
-            margin-bottom: -4rem;
-        }
-        .infoCopy, .infoImgTop, .infoImgBottom {
-            width: 42.5%;
-        }
-        .infoCopy {
-            display: flex;
-            flex-direction: column;
-        }
-        .infoCopy1 {
-            padding-right: 7rem;
-            align-items: flex-start;
-        }
-        .infoCopy2 {
-            padding-left: 7rem;
-            align-items: flex-end;
-        }
-    
+    .infoImgTop{
+        box-shadow: $boxShadowRight;
+        margin-top: -4rem;
+        width: 40%;
+    }
+    .infoImgBottom {
+        box-shadow: $boxShadowLeft;
+        margin-bottom: -4rem;
+    }
+    .infoCopy, .infoImgTop, .infoImgBottom {
+        width: 42.5%;
+    }
+    .infoCopy {
+        display: flex;
+        flex-direction: column;
+    }
+    .infoCopy1 {
+        padding-right: 10%;
+        align-items: flex-start;
+    }
+    .infoCopy2 {
+        padding-left: 10%;
+        align-items: flex-end;
+    }
+    img {
+        object-fit: cover;
     }
 
-    li:last-child {
+}
+
+    .infoContainer:last-child {
         flex-direction: row-reverse;
     }
-}
+
 
 
 // Host a Party Section
@@ -137,8 +169,9 @@ h2 {
 
 .breakBanner {
     background-image: url(../../../assets/banner-image.jpg);
-    background-size: cover;
-    height: 50vh;
+    background-position: center;
+    background-size: contain;
+    height: auto;
 }
 
 
@@ -147,14 +180,23 @@ h2 {
 
 .eventsSection .wrapper {
     display: flex;
-    padding: 2rem 0;
+    padding: 4rem 0;
     
     .eventsCopy {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
         width: 75%;
         padding-left: 4rem;
     }
     .eventsImg {
-        width: 25%
+        width: 25%;
+        img {
+        box-shadow: $boxShadowLeft;
+        // min-width: 317px;
+        object-fit: cover;
+        }
     }
 }
 

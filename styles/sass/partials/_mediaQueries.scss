@@ -1,0 +1,91 @@
+
+
+// Medium screen widths
+
+@media only screen and (max-width: 950px) {
+
+    section {
+        padding: 1rem;
+    
+        h3, a {
+            align-self: center;
+    }
+    }
+
+
+
+    p {
+        text-align: left;
+    }
+    .aboutSection li {
+        width: 100%;
+        padding-bottom: 0;
+    }
+
+    .planningInfoSection .infoContainer {
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 90%;
+        margin: 0 auto;
+
+        img, div {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        div {
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding-top: 2rem;
+        }
+
+    }
+
+    .hostPartySection {
+        padding: 1rem;
+    }
+
+    .eventsSection .wrapper {
+        flex-direction: column;
+        justify-content: center;    
+        align-items: center;
+        // width: 90%;
+        .eventsImg, .eventsCopy {
+            width: 100%;
+        }
+        .eventsCopy {
+            margin-top: 2rem;
+            padding: 0;
+
+        }
+    }
+
+
+
+
+
+}
+
+
+@media (max-width:640px) {
+
+
+    .wrapper {
+        width: 100%;
+    }
+
+    .gallery ul {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+        li {
+            width: 100%;
+        }
+
+        li:nth-of-type(2) {
+            padding: 1rem 0;
+        
+        }
+    }
+}

@@ -1,10 +1,13 @@
 // Setup
 @import "./partials/setup.scss";
 
+// Variables
+@import "./partials/variables";
+
 // Typography
 @import "./partials/typography.scss";
 
-// General Styles
+// General styles
 @import "./partials/general.scss";
 
 // Home page
@@ -14,4 +17,7 @@
 @import "./partials/blog.scss";
 
 // Contact page
-@import "./partials/contact.scss"
+@import "./partials/contact.scss";
+
+// Media queries
+@import "./partials/mediaQueries.scss";
