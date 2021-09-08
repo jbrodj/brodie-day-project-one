@@ -1,0 +1,92 @@
+
+.contactPage {
+    header {
+        height: auto;
+    }
+
+    h1 {
+
+    }
+
+    main {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+    }
+
+
+    .contactForm {
+        background-color: $background2;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        box-shadow: $boxShadowRight;
+        padding: 3rem 2rem 2rem 2rem;
+
+        > div {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        label {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        input {
+            background-color: $background2;
+            border: none;
+            width: 100%;
+        }
+
+        input[name="name"], input[name="email"] {
+
+            border-bottom: 2px solid $textColor;
+        }
+
+        input[name="message"] {
+            border: 2px solid $textColor;
+        }
+
+        input:focus {
+            background-color: $textColor;
+            color: $background2;
+        }
+
+        .nameContainer, .emailContainer, .messageContainer {
+            position: relative;
+        }
+
+        .nameContainer, .emailContainer {
+            width: calc(50% - 1rem);
+        }
+
+        .messageContainer {
+            margin: 2rem 0;
+        }
+    }
+}
+
+aside {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.socialNav {
+    width: 25%;
+    ul:first-of-type {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+
+    .contactInfo:first-child {
+        padding: 2rem 0;
+    }
+}

@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="./styles/style.css">
     </head>
     
-    <body>
+    <body class="contactPage">
         <header>
             <nav class="mainNav">
                 <ul>
@@ -25,41 +25,52 @@
                     <li><a href="./contact.html">Contact</a></li>
                 </ul>
             </nav>
-            <h1>Get in Touch</h1>
+            <div class="wrapper">
+                <h1>Get in Touch</h1>
+            </div>
         </header>
 
         <main>
-            <form>
-                <label for="name">Name</label>
-                <input type="text" name="name" id="name">
-                <label for="email">Email address</label>
-                <input type="email" name="email" id="email">
-                <label for="message">Message</label>
-                <input type="text" name="message" id="message">
+            <form class="contactForm">
+                <div>
+                    <div class="nameContainer">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name">
+                    </div>
+                    <div class="emailContainer">
+                        <label for="email">Email address</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                </div>
+                <div class="messageContainer">
+                    <label for="message">Message</label>
+                    <input type="text" name="message" id="message">
+                </div>
                 <button type="submit">Submit</button>
             </form>
+            <aside>
+                <nav class="socialNav">
+                    <ul>
+                        <li><a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="https://instagram.com"><i i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://twitter.com"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://api.whatsapp.com/send?phone=1234567890"><i class="fab fa-whatsapp"></i></a></li>
+                    </ul>
+                    <ul class="contactInfo">
+                        <li>info@email.com</li>
+                        <li>123 - 456 - 7890</li>
+                        <li>123 Queen Street West, Unit 10</li>
+                        <li>Toronto, Ontario</li>
+                        <li>M5V2D5</li>
+                    </ul>
+                </nav>
+            </aside>
         </main>
 
-        <aside>
-            <nav class="socialNav">
-                <ul>
-                    <li><a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="https://instagram.com"><i i class="fab fa-instagram"></i></a></li>
-                    <li><a href="https://twitter.com"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="https://api.whatsapp.com/send?phone=1234567890">Send Message><i class="fab fa-whatsapp"></i></a></li>
-                </ul>
-                <ul class="contactInfo">
-                    <li>info@email.com</li>
-                    <li>123 - 456 - 7890</li>
-                    <li>123 Queen Street West, Unit 10</li>
-                    <li>Toronto, Ontario</li>
-                    <li>M5V2D5</li>
-                </ul>
-            </nav>
-        </aside>
+
 
         <footer>
-            <div class="copywright">
+            <div class="copyright">
                 <p>Copyright © 2021 Juno College</p>
             </div>
         </footer>

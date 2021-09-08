@@ -105,6 +105,9 @@ h2 {
     border-radius: 50%;
     background-color: #bf2603;
     flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -170,8 +173,8 @@ h2 {
 .breakBanner {
     background-image: url(../../../assets/banner-image.jpg);
     background-position: center;
-    background-size: contain;
-    height: auto;
+    background-size: cover;
+    height: 500px;
 }
 
 

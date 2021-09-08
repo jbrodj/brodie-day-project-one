@@ -254,24 +254,24 @@ body {
   font-weight: 700;
 }
 
-h1, .logo, .moreLink, button[type=submit] {
+.mainH1, .logo, .moreLink, button[type=submit] {
   font-family: "Tulpen One", cursive;
 }
 
-h1, p, .moreLink {
+h1, p, .moreLink, button {
   font-weight: 400;
 }
 
-h1 {
-  font-size: 13.07rem;
-  letter-spacing: 2.4px;
-  color: #ff8327;
-}
-
-h2 {
+h2, .contactPage h1, .blogPage h1 {
   font-size: 4.16rem;
   line-height: 4.735rem;
   letter-spacing: 0.11rem;
+}
+
+.mainH1 {
+  font-size: 13.07rem;
+  letter-spacing: 2.4px;
+  color: #ff8327;
 }
 
 h3 {
@@ -316,6 +316,10 @@ p {
   line-height: 3rem;
 }
 
+.socialNav, label {
+  font-size: 1.5rem;
+}
+
 html {
   font-size: 125%;
 }
@@ -337,22 +341,29 @@ img {
   display: block;
 }
 
+i {
+  font-size: 1.5rem;
+}
+
+button {
+  border: none;
+}
+
 .accentColor,
 a:hover,
 a:focus {
   color: #ff8327;
 }
 
-.moreLink {
+.moreLink, button {
   background-color: #bf2603;
   padding: 0.25rem 1.5rem;
 }
-.moreLink :hover {
-  background-color: #fff;
-}
 
 .moreLink:hover,
-.moreLink:focus {
+.moreLink:focus,
+button:hover,
+button:focus {
   color: #220303;
   background-color: #fff;
 }
@@ -497,6 +508,15 @@ h2 {
   background-color: #bf2603;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .planningInfoSection {
@@ -570,8 +590,8 @@ h2 {
 .breakBanner {
   background-image: url(../../../assets/banner-image.jpg);
   background-position: center;
-  background-size: contain;
-  height: auto;
+  background-size: cover;
+  height: 500px;
 }
 
 .eventsSection .wrapper {
@@ -621,6 +641,103 @@ h2 {
 }
 .gallery ul li {
   width: calc(100% / 3 - 1rem);
+}
+
+.contactPage header {
+  height: auto;
+}
+.contactPage main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.contactPage .contactForm {
+  background-color: #220303;
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 20px 20px 0px -5px #ff8327;
+          box-shadow: 20px 20px 0px -5px #ff8327;
+  padding: 3rem 2rem 2rem 2rem;
+}
+.contactPage .contactForm > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.contactPage .contactForm label {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.contactPage .contactForm input {
+  background-color: #220303;
+  border: none;
+  width: 100%;
+}
+.contactPage .contactForm input[name=name], .contactPage .contactForm input[name=email] {
+  border-bottom: 2px solid #fff;
+}
+.contactPage .contactForm input[name=message] {
+  border: 2px solid #fff;
+}
+.contactPage .contactForm input:focus {
+  background-color: #fff;
+  color: #220303;
+}
+.contactPage .contactForm .nameContainer, .contactPage .contactForm .emailContainer, .contactPage .contactForm .messageContainer {
+  position: relative;
+}
+.contactPage .contactForm .nameContainer, .contactPage .contactForm .emailContainer {
+  width: calc(50% - 1rem);
+}
+.contactPage .contactForm .messageContainer {
+  margin: 2rem 0;
+}
+
+aside {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.socialNav {
+  width: 25%;
+}
+.socialNav ul:first-of-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.socialNav .contactInfo:first-child {
+  padding: 2rem 0;
 }
 
 @media only screen and (max-width: 950px) {

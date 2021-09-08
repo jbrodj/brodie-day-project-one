@@ -22,23 +22,30 @@ img {
     display: block;
 }
 
+i {
+    font-size: 1.5rem;
+}
+
+button {
+    border: none;
+}
+
 .accentColor,
 a:hover,
 a:focus {
     color: $accentColor;
 }
 
-.moreLink {
+.moreLink, button {
     background-color: $buttonColor;
     padding: 0.25rem 1.5rem;
-    // margin-top: 20rem;
-    :hover {
-        background-color: $textColor;
-    }
+
 }
 
 .moreLink:hover,
-.moreLink:focus {
+.moreLink:focus,
+button:hover,
+button:focus {
     color: $background2;
     background-color: $textColor;
 }
