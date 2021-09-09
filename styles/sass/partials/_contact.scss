@@ -2,18 +2,18 @@
 .contactPage {
     header {
         height: auto;
+        height: 50vh;
+        max-height: 400px;
+        background-image: url(../../../assets/contact-header-1.jpg);
+        background-size: cover;
     }
 
-    h1 {
-
-    }
-
-    main {
+    main .wrapper {
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-around;
+        padding: 0;
     }
-
 
     .contactForm {
         background-color: $background2;
@@ -23,44 +23,56 @@
         justify-content: center;
         box-shadow: $boxShadowRight;
         padding: 3rem 2rem 2rem 2rem;
+        margin: -5rem 0 5rem 0;
+        z-index: 1;
+
 
         > div {
             display: flex;
             justify-content: space-between;
         }
 
-        label {
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
+        // label {
+        //     position: absolute;
+        //     top: 0;
+        //     left: 1rem;
+        // }
+
 
         input {
             background-color: $background2;
             border: none;
             width: 100%;
-        }
-
-        input[name="name"], input[name="email"] {
-
+            height: 2rem;
+            color: $textColor;
+            padding: 0 0.5rem;
+            border: 2px solid $background2;
             border-bottom: 2px solid $textColor;
         }
 
-        input[name="message"] {
+        textarea {
             border: 2px solid $textColor;
+            height: 10rem;
+            width: 100%;
+            resize: none;
+            background-color: $background2;
+            color: $textColor;
+            padding: 0.5rem;
         }
 
-        input:focus {
-            background-color: $textColor;
-            color: $background2;
+        input:focus, textarea:focus {
+            // background-color: $textColor;
+            border: 2px solid $accentColor;
+            // color: $background2;
         }
 
-        .nameContainer, .emailContainer, .messageContainer {
-            position: relative;
+        input::placeholder, textarea::placeholder {
+
         }
+
 
         .nameContainer, .emailContainer {
-            width: calc(50% - 1rem);
+            width: calc(50% - 0.5rem);
         }
 
         .messageContainer {
@@ -72,21 +84,39 @@
 aside {
     width: 40%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 
 }
 
 .socialNav {
-    width: 25%;
+    padding: 4rem 0;
     ul:first-of-type {
         display: flex;
         justify-content: space-between;
+        width: 8rem;
+    }
 
+    li {
+        line-height: 1.5rem;
+    }
+
+    i {
+        font-size: 1.25rem;
     }
 
 
-    .contactInfo:first-child {
-        padding: 2rem 0;
+    .contactInfo li:first-of-type {
+        margin: 1rem 0;
+    }
+
+    .contactInfo {
+        margin-right: 2rem;
     }
 }
+
+// .contactPage footer {
+//     position: absolute;
+//     bottom: 0;
+//     width: 100%;
+// }

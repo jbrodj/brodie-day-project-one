@@ -6,13 +6,18 @@
 body {
     font-family: 'Chathura', sans-serif;
     font-weight: 700;
+    color: $textColor;
+}
+
+textarea, input::placeholder {
+    font-family: 'Chathura', sans-serif;
 }
 
 .mainH1, .logo, .moreLink, button[type="submit"] {
     font-family: 'Tulpen One', cursive;
 }
 
-h1, p, .moreLink, button {
+h1, p, .moreLink, button, .contactInfo li {
     font-weight: 400;
 }
 
@@ -28,22 +33,28 @@ h2, .contactPage h1, .blogPage h1 {
     color: #ff8327;
 }
 
-
-
 h3 {
     font-size: 3.4rem;
     line-height: 2.9rem;
     letter-spacing: 0.11rem;
 }
 
+h4 {
+    font-size: 2.5rem;
+    letter-spacing: 0.05rem;
+}
 
-
-p {
+p, textarea, input::placeholder {
     font-size: 1.95rem;
-    line-height: 1.5rem;
+    // line-height: 1.5rem;
     letter-spacing: 0.095rem;
 }    
 
+button {
+    color: inherit;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+}
 
 .logo {
     font-size: 3rem;
@@ -62,6 +73,15 @@ p {
 }
 
 
+.socialNav li {
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+}
+
+.contactInfo li {
+    font-size: 1.9rem;
+}
+
 .copyright {
     display: flex;
     justify-content: center;
@@ -72,9 +92,7 @@ p {
     }
 }
 
-.socialNav, label {
-    font-size: 1.5rem;
-}
+
 
 
 

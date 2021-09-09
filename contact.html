@@ -19,10 +19,10 @@
             <nav class="mainNav">
                 <ul>
                     <li class="logo">Bar-One</li>
-                    <li class="home"><a href="./index.html">Home</a></li>
+                    <li class="home"><a tabindex=0 href="./index.html">Home</a></li>
                     <li class="about"><a href="./index.html#aboutSection">About</a></li>
-                    <li><a href="./blog.html">Blog</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
+                    <li class="blog"><a href="./blog.html">Blog</a></li>
+                    <li class="contact"><a href="./contact.html">Contact</a></li>
                 </ul>
             </nav>
             <div class="wrapper">
@@ -31,40 +31,44 @@
         </header>
 
         <main>
-            <form class="contactForm">
-                <div>
-                    <div class="nameContainer">
-                        <label for="name">Name</label>
-                        <input type="text" name="name" id="name">
+            <div class="wrapper">
+                <form class="contactForm">
+                    <div>
+                        <div class="nameContainer">
+                            <label for="name" class="sr-only">Name</label>
+                            <input type="text" name="name" id="name" placeholder="Name">
+                        </div>
+                        <div class="emailContainer">
+                            <label for="email" class="sr-only">Email address</label>
+                            <input type="email" name="email" id="email"
+                            placeholder="Email address"
+                            >
+                        </div>
                     </div>
-                    <div class="emailContainer">
-                        <label for="email">Email address</label>
-                        <input type="email" name="email" id="email">
+                    <div class="messageContainer">
+                        <label for="message" class="sr-only">Message</label>
+                        <textarea name="message" id="message" placeholder="Message"></textarea>
                     </div>
-                </div>
-                <div class="messageContainer">
-                    <label for="message">Message</label>
-                    <input type="text" name="message" id="message">
-                </div>
-                <button type="submit">Submit</button>
-            </form>
-            <aside>
-                <nav class="socialNav">
-                    <ul>
-                        <li><a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="https://instagram.com"><i i class="fab fa-instagram"></i></a></li>
-                        <li><a href="https://twitter.com"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="https://api.whatsapp.com/send?phone=1234567890"><i class="fab fa-whatsapp"></i></a></li>
-                    </ul>
-                    <ul class="contactInfo">
-                        <li>info@email.com</li>
-                        <li>123 - 456 - 7890</li>
-                        <li>123 Queen Street West, Unit 10</li>
-                        <li>Toronto, Ontario</li>
-                        <li>M5V2D5</li>
-                    </ul>
-                </nav>
-            </aside>
+                    <button type="submit">Submit</button>
+                </form>
+                <aside>
+                    <nav class="socialNav">
+                        <ul>
+                            <li><a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="https://instagram.com"><i i class="fab fa-instagram"></i></a></li>
+                            <li><a href="https://twitter.com"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="https://api.whatsapp.com/send?phone=1234567890"><i class="fab fa-whatsapp"></i></a></li>
+                        </ul>
+                        <ul class="contactInfo">
+                            <li>info@email.com</li>
+                            <li>123 - 456 - 7890</li>
+                            <li>123 Queen Street West, Unit 10</li>
+                            <li>Toronto, Ontario</li>
+                            <li>M5V2D5</li>
+                        </ul>
+                    </nav>
+                </aside>
+            </div>
         </main>
 
 

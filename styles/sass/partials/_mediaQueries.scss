@@ -60,6 +60,18 @@
         }
     }
 
+    .gallery ul {
+        justify-content: space-between;
+
+        li:last-of-type {
+            display: none;
+        }
+
+        li {
+            width: calc(50% - 0.5rem);
+        }
+    }
+
 
 
 
@@ -72,20 +84,5 @@
 
     .wrapper {
         width: 100%;
-    }
-
-    .gallery ul {
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-
-        li {
-            width: 100%;
-        }
-
-        li:nth-of-type(2) {
-            padding: 1rem 0;
-        
-        }
     }
 }

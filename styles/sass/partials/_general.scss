@@ -7,11 +7,14 @@ html {
 
 body {
     background-color: #111010;
-    color: $textColor;
+    // display: flex;
+    // flex-direction: column;
+    // min-height: 100vh; 
+
 }
 
 .wrapper {
-    width: 90%;
+    width: 80%;
     max-width: 1400px;
     margin: 0 auto;
     padding: 4rem 0;
@@ -55,6 +58,12 @@ button:focus {
     margin-bottom: 1.5rem;
 }
 
+footer {
+    background-color: $background3;
+
+}
+
 .copyright p {
         text-align: center;
+        line-height: 3rem;
 }
