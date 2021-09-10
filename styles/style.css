@@ -731,7 +731,7 @@ h2 {
   height: auto;
   height: 50vh;
   max-height: 400px;
-  background-image: url(../../../assets/blog-header-1.jpg);
+  background-image: url(../assets/blog-header-1.jpg);
   background-size: cover;
 }
 .blogPage main {
@@ -908,7 +908,7 @@ h2 {
   height: auto;
   height: 50vh;
   max-height: 400px;
-  background-image: url(../../../assets/contact-header-1.jpg);
+  background-image: url(../assets/contact-header-1.jpg);
   background-size: cover;
 }
 .contactPage main .wrapper {
