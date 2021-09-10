@@ -461,7 +461,7 @@ footer {
 }
 
 header {
-  background: url(../../../assets/home-image-1.jpg) center;
+  background: url(../../assets/home-image-1.jpg) center;
   background-size: cover;
   height: 100vh;
   padding: 15px 0;
@@ -671,7 +671,7 @@ h2 {
 }
 
 .breakBanner {
-  background-image: url(../../../assets/banner-image.jpg);
+  background-image: url(../../assets/banner-image.jpg);
   background-position: center;
   background-size: cover;
   height: 500px;
