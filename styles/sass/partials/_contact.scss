@@ -26,7 +26,6 @@
         margin: -5rem 0 5rem 0;
         z-index: 1;
 
-
         > div {
             display: flex;
             justify-content: space-between;
@@ -54,15 +53,8 @@
         }
 
         input:focus, textarea:focus {
-            // background-color: $textColor;
             border: 2px solid $accentColor;
-            // color: $background2;
         }
-
-        input::placeholder, textarea::placeholder {
-
-        }
-
 
         .nameContainer, .emailContainer {
             width: calc(50% - 0.5rem);
@@ -79,7 +71,6 @@ aside {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-
 }
 
 .socialNav {
@@ -98,7 +89,6 @@ aside {
         font-size: 1.25rem;
     }
 
-
     .contactInfo li:first-of-type {
         margin: 1rem 0;
     }
@@ -107,9 +97,3 @@ aside {
         margin-right: 2rem;
     }
 }
-
-// .contactPage footer {
-//     position: absolute;
-//     bottom: 0;
-//     width: 100%;
-// }

@@ -1,4 +1,4 @@
-// Header
+// HEADER - Shared across all pages
 
 header {
     background: url(../../../assets/home-image-1.jpg) center;
@@ -168,6 +168,7 @@ h2 {
 }
 
 
+
 // Banner
 
 .breakBanner {
@@ -194,7 +195,6 @@ h2 {
         padding-left: 4rem;
     }
     .eventsImg {
-        // display: flex;
         width: 30%;
 
         img {
