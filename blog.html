@@ -21,15 +21,25 @@
                     <li class="logo">Bar-One</li>
                     <li class="home"><a tabindex=0 href="./index.html">Home</a></li>
                     <li class="about"><a href="./index.html#aboutSection">About</a></li>
-                    <li class="blog"><a href="./blog.html">Blog</a></li>
+                    <li class="blog"><a href="./blog.html" class="accentColor">Blog</a></li>
                     <li class="contact"><a href="./contact.html">Contact</a></li>
+                </ul>
             </nav>
+            <div class="mobileNavContainer">
+                <div>
+                    <h3 class="logo"><a href="./index.html">Bar-One</a></h3>
+                </div>
+                <nav class="mobileNav">
+                    <i class="fas fa-bars"></i>
+                </nav>
+            </div>
             <div class="wrapper">
                 <h1>Blog</h1>
             </div>
         </header>
     
         <main>
+            <div class="wrapper">
             <section class="articleSection">
                 <article>
                     <div class="articleImg"><img src="./assets/post-image.jpg" alt="Several plated meals ready to be served."></div>
@@ -48,7 +58,7 @@
                         <img src="./assets/comment-image-1.jpg" alt="Profile image for user Sulaire" class="userimg">
                         <div class="commentCopy">
                             <h4 class="accentColor">Tuesday October 9, 2019 by Sulaire</h4>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum commodi nisi, aspernatur quidem repellat aliquid quasi aperiam placeat ad ratione amet, earum nulla? Error quod perspiciatis maxime laborum quae, amet corporis voluptatum sunt. Dicta, fuga.</p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum commodi nisi, aspernatur quidem repellat aliquid quasi aperiam placeat ad ratione amet, earum nulla? Error quod maxime laborum quae, amet corporis voluptatum sunt. Dicta, fuga.</p>
                         </div>
                     </div>
                     <div class="blogComment">
@@ -80,11 +90,13 @@
             </section>
 
             <aside class="blogAside">
-                <img src="./assets/sidebar-image.jpg" alt="Draft beer being poured from a tap.">
+                <div class="asideImg">
+                    <img src="./assets/sidebar-image.jpg" alt="Draft beer being poured from a tap.">
+                </div>
                 <div class="blogAsideCopy">
                     <div>
                         <h3>Our Mission</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus sit eos itaque!</p>
+                        <p>Nom dopibus nisi vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum!</p>
                         <a href="#" class="accentColor">Find out more.</a>
                     </div>
                     <nav class="blogNav">

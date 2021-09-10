@@ -1,4 +1,5 @@
 .blogPage {
+
     header {
         height: auto;
         height: 50vh;
@@ -8,17 +9,26 @@
     }
 
     main {
+        padding: 0;
+    }
+
+    main > .wrapper {
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
         align-items: flex-start;
         padding: 0;
-        margin: -8rem 0 0 0;
+        width: 100%;
+        max-width: 1920px;
     }
 
     .articleSection {
-        width: 65%;
-        // margin-top: -8rem;
+        width: 60%;
+        margin-bottom: -8rem;
+        position: relative;
+        top: -8rem;
+        margin-left: 1.25rem;
+        z-index: 1;
     }
 
     .articleImg {
@@ -26,8 +36,18 @@
     }
 
     .blogCopy {
-        box-shadow: $boxShadowLeft;
-        padding: 4rem;
+        margin: 0 0 0 -25px;
+        border-left: 5px solid $accentColor;
+        border-bottom: 5px solid $accentColor;
+        padding: 4.5rem 3rem 4.5rem 4.5rem;
+
+        h4 {
+            margin-top: -0.4rem;
+        }
+
+        p {
+            margin-top: 1.5rem;
+        }
     }
 
     .commentForm {
@@ -35,9 +55,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-
         z-index: 1;
-
 
         > div {
             display: flex;
@@ -66,13 +84,7 @@
         }
 
         input:focus, textarea:focus {
-            // background-color: $textColor;
             border: 2px solid $accentColor;
-            // color: $background2;
-        }
-
-        input::placeholder, textarea::placeholder {
-
         }
 
         .nameContainer, .emailContainer {
@@ -86,8 +98,8 @@
 }
 
 .blogComment img {
-    width: 6rem;
-    height: 6rem;
+    width: 5rem;
+    height: 5rem;
     object-fit: contain;
     margin-top: 15px;
 }
@@ -96,21 +108,63 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin-bottom: 4rem;
+    margin: 1.25rem 0 3rem 0;
 }
 
 .commentCopy {
     margin-left: 2rem;
 }
 
+
+
+
+// Sidebar
+
 .blogAside {
     display: flex;
     flex-direction: column;
-    width: 35%;
+    align-items: flex-end;
+    width: 40%;
+    padding: 6rem 4rem;
+}
+
+.asideImg {
+    width: 115%;
+    background-color: $background2;
+
+    img {
+        object-fit: cover;
+        position: relative;
+        right: 1.75rem;
+        margin-top: -1rem;
+    }
 }
 
 .blogAsideCopy {
     background-color: $background2;
-    width: 60%;
-    padding-top: 10rem;
+    width: 100%;
+    padding-bottom: 0.5em;
+    padding: 1.5rem 0 1.5rem 1.5rem;
+
+    div, nav {
+        width: 80%;
+        // margin: 1rem auto 1rem auto;
+    }
+
+    a:hover, a:focus {
+        color: $textColor;
+    }
+
+    ul {
+        // width: 100%;
+        padding-left: 1.5rem;
+    }
+
+    li {
+        list-style-type: disc;
+    }
+
+    li::marker {
+        color: $buttonColor;
+    }
 }

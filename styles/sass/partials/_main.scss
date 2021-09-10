@@ -62,7 +62,7 @@ header {
 
 .headerImg {
     position: absolute;
-    bottom: -10%;
+    bottom: -12.5%;
     right: 0;
     width: 50%;
 }
@@ -76,7 +76,7 @@ h2 {
 // About Section
 
 .aboutSection {
-    padding: 2rem;
+    padding: 3rem 0;
     .wrapper {
         display: flex;
         ul {
@@ -122,16 +122,16 @@ h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 0;
+    padding: 3rem 0;
 
     .infoImgTop{
         box-shadow: $boxShadowRight;
-        margin-top: -4rem;
+        margin-top: -5rem;
         width: 40%;
     }
     .infoImgBottom {
         box-shadow: $boxShadowLeft;
-        margin-bottom: -4rem;
+        margin-bottom: -5rem;
     }
     .infoCopy, .infoImgTop, .infoImgBottom {
         width: 42.5%;
@@ -164,7 +164,7 @@ h2 {
 
 .hostPartySection {
     text-align: center;
-    padding: 2rem 0;
+    padding: 5rem 0 4rem 0;
 }
 
 
@@ -183,22 +183,24 @@ h2 {
 
 .eventsSection .wrapper {
     display: flex;
-    padding: 4rem 0;
+    // padding: 6rem 0;
     
     .eventsCopy {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-start;
-        width: 75%;
+        width: 70%;
         padding-left: 4rem;
     }
     .eventsImg {
-        width: 25%;
+        // display: flex;
+        width: 30%;
+
         img {
         box-shadow: $boxShadowLeft;
-        // min-width: 317px;
         object-fit: cover;
+        margin: 0.75rem 0 1.25rem 0;
         }
     }
 }
@@ -210,6 +212,7 @@ h2 {
 .gallery {
     background-color: #220303;
     width: 100%;
+    padding: 4rem 0;
 
     ul {
         display: flex;

@@ -17,7 +17,7 @@ textarea, input::placeholder {
     font-family: 'Tulpen One', cursive;
 }
 
-h1, p, .moreLink, button, .contactInfo li {
+h1, h4, p, .moreLink, button, .contactInfo li {
     font-weight: 400;
 }
 
@@ -44,9 +44,13 @@ h4 {
     letter-spacing: 0.05rem;
 }
 
+.blogCopy h4, .blogAsideCopy a {
+    font-size: 1.95rem;
+}
+
 p, textarea, input::placeholder {
     font-size: 1.95rem;
-    // line-height: 1.5rem;
+    line-height: 1.5rem;
     letter-spacing: 0.095rem;
 }    
 
@@ -81,6 +85,12 @@ button {
 .contactInfo li {
     font-size: 1.9rem;
 }
+
+    .blogAsideCopy {
+        ul {
+            line-height: 1.5rem;
+        }
+    }
 
 .copyright {
     display: flex;
