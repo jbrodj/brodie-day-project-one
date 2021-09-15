@@ -340,7 +340,7 @@ input::-ms-input-placeholder {
   letter-spacing: 0.095rem;
 }
 
-p, textarea, input::placeholder {
+p, textarea, input::placeholder, .changerLabel {
   font-size: 1.95rem;
   line-height: 1.5rem;
   letter-spacing: 0.095rem;
@@ -464,6 +464,10 @@ footer {
 .copyright p {
   text-align: center;
   line-height: 3rem;
+}
+
+.changerButton {
+  margin: 0 0.75rem 0 0.25rem;
 }
 
 header {
@@ -923,6 +927,21 @@ h2 {
 }
 .blogAsideCopy li::marker {
   color: var(--buttonColor);
+}
+
+.blogPage header .wrapper,
+.contactPage header .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .contactPage header {

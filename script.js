@@ -1,24 +1,18 @@
 
-// const colorVariableClass = document.querySelectorAll('.accentColor')
 
-// colorVariableClass[1].classList.add('kewlStuff')
+const checkboxElement = document.querySelector('.changerButton');
+const changerLabel = document.querySelector('.changerLabel');
 
-
-
-// console.log(colorVariableClass)
-
-const buttonElement = document.querySelector('.changerButton')
-
-buttonElement.addEventListener('click', function() {
-    console.log('clickeroooo')
-
-    document.documentElement.style.setProperty('--accentColor', 'cyan');
-    document.documentElement.style.setProperty('--buttonColor', '#cadetblue');
-    document.documentElement.style.setProperty('--background2', 'cadetblue');
-
-
-    // colorVariableClass.forEach(everyThing => {
-    //     everyThing.classList.toggle('kewlStuff')
-    // })
-
-})
+checkboxElement.addEventListener('change', function() {
+    if (this.checked) {
+        changerLabel.innerHTML = 'Feeling too blue? Click again.'
+        document.documentElement.style.setProperty('--accentColor', 'cyan');
+        document.documentElement.style.setProperty('--buttonColor', 'cadetblue');
+        document.documentElement.style.setProperty('--background2', '#268080');
+    } else {
+        changerLabel.innerHTML = 'Orange you glad you can click here?'
+        document.documentElement.style.setProperty('--accentColor', '#ff8327');
+        document.documentElement.style.setProperty('--buttonColor', '#bf2603');
+        document.documentElement.style.setProperty('--background2', '#220303');
+    };
+});
