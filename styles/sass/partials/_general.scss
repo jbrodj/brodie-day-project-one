@@ -30,7 +30,7 @@ i {
 }
 
 button, .moreLink {
-    border: 2px solid $buttonColor;
+    border: 2px solid var(--buttonColor);
 }
 
 .accentColor,
@@ -38,11 +38,12 @@ a:hover,
 a:focus,
 .fa-bars:hover,
 .fa-bars:focus {
-    color: $accentColor;
+    // color: var(--accentColor);
+    color: var(--accentColor);
 }
 
 .moreLink, button {
-    background-color: $buttonColor;
+    background-color: var(--buttonColor);
     padding: 0.25rem 2rem;
 
 }
@@ -51,12 +52,12 @@ a:focus,
 .moreLink:focus,
 button:hover,
 button:focus {
-    color: $background2;
+    color: var(--background2);
     background-color: $textColor;
 }
 
 .moreLink:focus, button:focus {
-    border: 2px solid $accentColor;
+    border: 2px solid var(--accentColor);
 }
 
 .infoCopy p, .eventsSection p, .hostPartySection p {

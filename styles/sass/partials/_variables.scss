@@ -9,21 +9,26 @@ $textColor: #fff;
 $background1: #111010;
 
 // Background color 2 (dark red)
-$background2: #220303;
+// $background2: #220303;
 
 // Footer color (grey)
 $background3: #363636;
 
 // Icon/button color (red)
-$buttonColor: #bf2603;
+// $buttonColor: #bf2603;
 
 // Accent color (orange)
-$accentColor: #ff8327;
+// var(--accentColor): #ff8327;
 
 
+:root {
+    --accentColor: #ff8327;
+    --background2: #220303;
+    --buttonColor: #bf2603;
+}
 
 // Box Shadow
 
-$boxShadowLeft: -40px 40px 0px -15px #ff8327;
+$boxShadowLeft: -40px 40px 0px -15px var(--accentColor);
 
-$boxShadowRight: 40px 40px 0px -15px #ff8327;
+$boxShadowRight: 40px 40px 0px -15px var(--accentColor);
