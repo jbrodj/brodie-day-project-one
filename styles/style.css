@@ -249,6 +249,12 @@ li {
   list-style: none;
 }
 
+:root {
+  --accentColor: #ff8327;
+  --background2: #220303;
+  --buttonColor: #bf2603;
+}
+
 body {
   font-family: "Chathura", sans-serif;
   font-weight: 700;
@@ -292,7 +298,7 @@ h2, .contactPage h1, .blogPage h1 {
 .mainH1 {
   font-size: 13.07rem;
   letter-spacing: 2.4px;
-  color: #ff8327;
+  color: var(--accentColor);
 }
 
 h3 {
@@ -334,7 +340,7 @@ input::-ms-input-placeholder {
   letter-spacing: 0.095rem;
 }
 
-p, textarea, input::placeholder {
+p, textarea, input::placeholder, .changerLabel {
   font-size: 1.95rem;
   line-height: 1.5rem;
   letter-spacing: 0.095rem;
@@ -418,7 +424,7 @@ i {
 }
 
 button, .moreLink {
-  border: 2px solid #bf2603;
+  border: 2px solid var(--buttonColor);
 }
 
 .accentColor,
@@ -426,11 +432,11 @@ a:hover,
 a:focus,
 .fa-bars:hover,
 .fa-bars:focus {
-  color: #ff8327;
+  color: var(--accentColor);
 }
 
 .moreLink, button {
-  background-color: #bf2603;
+  background-color: var(--buttonColor);
   padding: 0.25rem 2rem;
 }
 
@@ -438,12 +444,12 @@ a:focus,
 .moreLink:focus,
 button:hover,
 button:focus {
-  color: #220303;
+  color: var(--background2);
   background-color: #fff;
 }
 
 .moreLink:focus, button:focus {
-  border: 2px solid #ff8327;
+  border: 2px solid var(--accentColor);
 }
 
 .infoCopy p, .eventsSection p, .hostPartySection p {
@@ -458,6 +464,10 @@ footer {
 .copyright p {
   text-align: center;
   line-height: 3rem;
+}
+
+.changerButton {
+  margin: 0 0.75rem 0 0.25rem;
 }
 
 header {
@@ -527,6 +537,17 @@ header {
   margin-bottom: -0.5rem;
 }
 
+.mobileNav {
+  position: relative;
+}
+.mobileNav ul {
+  font-size: 2rem;
+  background-color: rgba(255, 255, 255, 0.082);
+  padding: 0.5rem 1rem;
+  position: absolute;
+  right: 0;
+}
+
 .titleContainer {
   height: 100%;
   width: auto;
@@ -588,7 +609,7 @@ h2 {
   height: 3rem;
   width: 3rem;
   border-radius: 50%;
-  background-color: #bf2603;
+  background-color: var(--buttonColor);
   -ms-flex-negative: 0;
       flex-shrink: 0;
   display: -webkit-box;
@@ -603,7 +624,7 @@ h2 {
 }
 
 .planningInfoSection {
-  background-color: #220303;
+  background-color: var(--background2);
 }
 
 .infoContainer {
@@ -619,14 +640,14 @@ h2 {
   padding: 3rem 0;
 }
 .infoContainer .infoImgTop {
-  -webkit-box-shadow: 40px 40px 0px -15px #ff8327;
-          box-shadow: 40px 40px 0px -15px #ff8327;
+  -webkit-box-shadow: 40px 40px 0px -15px var(--accentColor);
+          box-shadow: 40px 40px 0px -15px var(--accentColor);
   margin-top: -5rem;
   width: 40%;
 }
 .infoContainer .infoImgBottom {
-  -webkit-box-shadow: -40px 40px 0px -15px #ff8327;
-          box-shadow: -40px 40px 0px -15px #ff8327;
+  -webkit-box-shadow: -40px 40px 0px -15px var(--accentColor);
+          box-shadow: -40px 40px 0px -15px var(--accentColor);
   margin-bottom: -5rem;
 }
 .infoContainer .infoCopy, .infoContainer .infoImgTop, .infoContainer .infoImgBottom {
@@ -703,15 +724,15 @@ h2 {
   width: 30%;
 }
 .eventsSection .wrapper .eventsImg img {
-  -webkit-box-shadow: -40px 40px 0px -15px #ff8327;
-          box-shadow: -40px 40px 0px -15px #ff8327;
+  -webkit-box-shadow: -40px 40px 0px -15px var(--accentColor);
+          box-shadow: -40px 40px 0px -15px var(--accentColor);
   -o-object-fit: cover;
      object-fit: cover;
   margin: 0.75rem 0 1.25rem 0;
 }
 
 .gallery {
-  background-color: #220303;
+  background-color: var(--background2);
   width: 100%;
   padding: 4rem 0;
 }
@@ -764,13 +785,13 @@ h2 {
   z-index: 1;
 }
 .blogPage .articleImg {
-  -webkit-box-shadow: -40px 40px 0px -15px #ff8327;
-          box-shadow: -40px 40px 0px -15px #ff8327;
+  -webkit-box-shadow: -40px 40px 0px -15px var(--accentColor);
+          box-shadow: -40px 40px 0px -15px var(--accentColor);
 }
 .blogPage .blogCopy {
   margin: 0 0 0 -25px;
-  border-left: 5px solid #ff8327;
-  border-bottom: 5px solid #ff8327;
+  border-left: 5px solid var(--accentColor);
+  border-bottom: 5px solid var(--accentColor);
   padding: 4.5rem 3rem 4.5rem 4.5rem;
 }
 .blogPage .blogCopy h4 {
@@ -809,10 +830,10 @@ h2 {
   color: #fff;
   padding: 0 0.5rem;
   border: 2px solid #111010;
-  border-bottom: 2px solid #ff8327;
+  border-bottom: 2px solid var(--accentColor);
 }
 .blogPage .commentForm textarea {
-  border: 2px solid #ff8327;
+  border: 2px solid var(--accentColor);
   height: 10rem;
   width: 100%;
   resize: none;
@@ -821,7 +842,7 @@ h2 {
   padding: 0.5rem;
 }
 .blogPage .commentForm input:focus, .blogPage .commentForm textarea:focus {
-  border: 2px solid #ff8327;
+  border: 2px solid var(--accentColor);
 }
 .blogPage .commentForm .nameContainer, .blogPage .commentForm .emailContainer {
   width: calc(50% - 0.5rem);
@@ -872,7 +893,7 @@ h2 {
 
 .asideImg {
   width: 115%;
-  background-color: #220303;
+  background-color: var(--background2);
 }
 .asideImg img {
   -o-object-fit: cover;
@@ -883,7 +904,7 @@ h2 {
 }
 
 .blogAsideCopy {
-  background-color: #220303;
+  background-color: var(--background2);
   width: 100%;
   padding-bottom: 0.5em;
   padding: 1.5rem 0 1.5rem 1.5rem;
@@ -901,7 +922,22 @@ h2 {
   list-style-type: disc;
 }
 .blogAsideCopy li::marker {
-  color: #bf2603;
+  color: var(--buttonColor);
+}
+
+.blogPage header .wrapper,
+.contactPage header .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .contactPage header {
@@ -924,7 +960,7 @@ h2 {
   padding: 0;
 }
 .contactPage .contactForm {
-  background-color: #220303;
+  background-color: var(--background2);
   width: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -936,8 +972,8 @@ h2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-shadow: 40px 40px 0px -15px #ff8327;
-          box-shadow: 40px 40px 0px -15px #ff8327;
+  -webkit-box-shadow: 40px 40px 0px -15px var(--accentColor);
+          box-shadow: 40px 40px 0px -15px var(--accentColor);
   padding: 3rem 2rem 2rem 2rem;
   margin: -5rem 0 5rem 0;
   z-index: 1;
@@ -951,13 +987,13 @@ h2 {
           justify-content: space-between;
 }
 .contactPage .contactForm input {
-  background-color: #220303;
+  background-color: var(--background2);
   border: none;
   width: 100%;
   height: 2rem;
   color: #fff;
   padding: 0 0.5rem;
-  border: 2px solid #220303;
+  border: 2px solid var(--background2);
   border-bottom: 2px solid #fff;
 }
 .contactPage .contactForm textarea {
@@ -965,12 +1001,12 @@ h2 {
   height: 10rem;
   width: 100%;
   resize: none;
-  background-color: #220303;
+  background-color: var(--background2);
   color: #fff;
   padding: 0.5rem;
 }
 .contactPage .contactForm input:focus, .contactPage .contactForm textarea:focus {
-  border: 2px solid #ff8327;
+  border: 2px solid var(--accentColor);
 }
 .contactPage .contactForm .nameContainer, .contactPage .contactForm .emailContainer {
   width: calc(50% - 0.5rem);
@@ -1131,7 +1167,7 @@ aside {
   .blogPage .blogCopy {
     -webkit-box-shadow: none;
             box-shadow: none;
-    border-bottom: 0.5rem solid #ff8327;
+    border-bottom: 0.5rem solid var(--accentColor);
   }
 
   main .wrapper .blogAside .articleImg {
@@ -1140,7 +1176,7 @@ aside {
   }
 
   .blogAside {
-    background-color: #220303;
+    background-color: var(--background2);
   }
   .blogAside .blogAsideCopy {
     width: 80%;
@@ -1292,7 +1328,7 @@ aside {
     padding: 2rem 0;
     margin: 0;
     border-left: none;
-    border-bottom: 5px solid #ff8327;
+    border-bottom: 5px solid var(--accentColor);
   }
   .blogPage .articleSection .comments {
     width: 100%;
@@ -1352,7 +1388,7 @@ aside {
 
   .contactPage .contactForm {
     margin: 0;
-    border-bottom: 1rem solid #ff8327;
+    border-bottom: 1rem solid var(--accentColor);
     -webkit-box-shadow: none;
             box-shadow: none;
   }

@@ -52,6 +52,18 @@ header {
     }
 }
 
+.mobileNav {
+    position: relative;
+    ul {
+        font-size: 2rem;
+        background-color: rgba(255, 255, 255, 0.082);
+        padding: 0.5rem 1rem;
+        position: absolute;
+        right: 0;
+        // top: ;
+    }
+}
+
 .titleContainer {
     height: 100%;
     width: auto;
@@ -103,7 +115,7 @@ h2 {
     height: 3rem;
     width: 3rem;
     border-radius: 50%;
-    background-color: #bf2603;
+    background-color: var(--buttonColor);
     flex-shrink: 0;
     display: flex;
     justify-content: center;
@@ -115,7 +127,7 @@ h2 {
 // Planning/Info Section
 
 .planningInfoSection {
-    background-color: #220303;
+    background-color: var(--background2);
 }
     
 .infoContainer {
@@ -210,7 +222,7 @@ h2 {
 // Gallery Section 
 
 .gallery {
-    background-color: #220303;
+    background-color: var(--background2);
     width: 100%;
     padding: 4rem 0;
 
@@ -223,8 +235,6 @@ h2 {
         }
     }
 }
-
-
 
 // Footer
 
