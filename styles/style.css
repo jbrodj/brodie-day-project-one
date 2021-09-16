@@ -748,10 +748,6 @@ h2 {
   width: calc(100% / 3 - 1rem);
 }
 
-.kewlStuff {
-  color: cyan;
-}
-
 .blogPage header {
   height: auto;
   height: 50vh;
