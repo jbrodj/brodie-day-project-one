@@ -459,11 +459,22 @@ button:focus {
 
 footer {
   background-color: #363636;
+  padding: 1rem;
+  min-height: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .copyright p {
   text-align: center;
-  line-height: 3rem;
+  line-height: 1;
 }
 
 .changerButton {
@@ -1264,6 +1275,17 @@ aside {
 
   .wrapper {
     padding: 1rem 0;
+  }
+
+  .titleContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .titleContainer > div {
+    text-align: center;
+    max-width: 12rem;
   }
 
   .mainH1 {
