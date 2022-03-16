@@ -35,84 +35,88 @@
             <div class="wrapper">
                 <h1>Blog</h1>
                 <div>
-                    <label for="changerButton" class="changerLabel">Orange you glad you can click here...</label>
-                    <input type="checkbox" class="changerButton" name="changerButton" id="changerButton"></input>
+                    <form>
+                        <label for="changerButton" class="changerLabel">Orange you glad you can click here...</label>
+                        <input type="checkbox" class="changerButton" name="changerButton" id="changerButton">
+                    </form>
                 </div>
             </div>
         </header>
     
         <main>
             <div class="wrapper">
-            <section class="articleSection">
-                <article>
-                    <div class="articleImg"><img src="./assets/post-image.jpg" alt="Several plated meals ready to be served."></div>
-                    <div class="blogCopy">
-                        <h3>New menu!</h3>
-                        <h4 class="accentColor">Monday January 30, 2019 by Saron</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi animi doloremque aperiam facere corrupti laudantium tempore sapiente, nisi possimus ullam eum odio rerum numquam doloribus pariatur molestias quidem? Labore, repellat?</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis doloribus consectetur voluptates quo quis quidem odit, commodi maiores iusto debitis obcaecati nesciunt distinctio, minima inventore deserunt, alias magnam velit? Excepturi vel doloremque amet fugiat aliquid! Voluptas reiciendis perspiciatis deserunt aspernatur.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro quam ab quae nihil molestiae ratione nesciunt perferendis laudantium corrupti quaerat voluptatem numquam, ea esse id vero cum facilis rem, quidem doloribus? Eligendi aliquam molestias delectus animi ipsam dolorum vero iure alias a suscipit? Accusamus ea, eos nam tempore omnis aspernatur!</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae aut dolorem et quibusdam corporis quod exercitationem illo debitis sapiente voluptatem.</p>
-                    </div>
-                </article>
-                <div class="comments wrapper">
-                    <h3>Comments:</h3>
-                    <div class="blogComment">
-                        <img src="./assets/comment-image-1.jpg" alt="Profile image for user Sulaire" class="userimg">
-                        <div class="commentCopy">
-                            <h4 class="accentColor">Tuesday October 9, 2019 by Sulaire</h4>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum commodi nisi, aspernatur quidem repellat aliquid quasi aperiam placeat ad ratione amet, earum nulla? Error quod maxime laborum quae, amet corporis voluptatum sunt. Dicta, fuga.</p>
+                <section class="articleSection">
+                    <h2 class="sr-only">Recent Posts</h2>
+                    <article>
+                        <div class="articleImg"><img src="./assets/post-image.jpg" alt="Several plated meals ready to be served."></div>
+                        <div class="blogCopy">
+                            <h3>New menu!</h3>
+                            <h4 class="accentColor">Monday January 30, 2019 by Saron</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi animi doloremque aperiam facere corrupti laudantium tempore sapiente, nisi possimus ullam eum odio rerum numquam doloribus pariatur molestias quidem? Labore, repellat?</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis doloribus consectetur voluptates quo quis quidem odit, commodi maiores iusto debitis obcaecati nesciunt distinctio, minima inventore deserunt, alias magnam velit? Excepturi vel doloremque amet fugiat aliquid! Voluptas reiciendis perspiciatis deserunt aspernatur.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro quam ab quae nihil molestiae ratione nesciunt perferendis laudantium corrupti quaerat voluptatem numquam, ea esse id vero cum facilis rem, quidem doloribus? Eligendi aliquam molestias delectus animi ipsam dolorum vero iure alias a suscipit? Accusamus ea, eos nam tempore omnis aspernatur!</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae aut dolorem et quibusdam corporis quod exercitationem illo debitis sapiente voluptatem.</p>
                         </div>
-                    </div>
-                    <div class="blogComment">
-                        <img src="./assets/comment-image-2.jpg" alt="Profile image for user Renzo" class="userimg">
-                        <div class="commentCopy">
-                            <h4 class="accentColor">Wednesday October 10, 2019 by Renzo</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos voluptatibus quia aut ipsum maiores facere expedita harum at, eligendi molestias! Voluptas!.</p>
+                    </article>
+                    <div class="comments wrapper">
+                        <h3>Comments:</h3>
+                        <div class="blogComment">
+                            <img src="./assets/comment-image-1.jpg" alt="Profile image for user Sulaire" class="userimg">
+                            <div class="commentCopy">
+                                <h4 class="accentColor">Tuesday October 9, 2019 by Sulaire</h4>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum commodi nisi, aspernatur quidem repellat aliquid quasi aperiam placeat ad ratione amet, earum nulla? Error quod maxime laborum quae, amet corporis voluptatum sunt. Dicta, fuga.</p>
+                            </div>
                         </div>
-                    </div>
+                        <div class="blogComment">
+                            <img src="./assets/comment-image-2.jpg" alt="Profile image for user Renzo" class="userimg">
+                            <div class="commentCopy">
+                                <h4 class="accentColor">Wednesday October 10, 2019 by Renzo</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos voluptatibus quia aut ipsum maiores facere expedita harum at, eligendi molestias! Voluptas!.</p>
+                            </div>
+                        </div>
 
-                    <form class="commentForm">
+                        <form class="commentForm">
+                            <div>
+                                <div class="nameContainer">
+                                    <label for="name" class="sr-only">Name</label>
+                                    <input type="text" name="name" id="name" placeholder="Name">
+                                </div>
+                                <div class="emailContainer">
+                                    <label for="email" class="sr-only">Email address</label>
+                                    <input type="email" name="email" id="email" placeholder="Email address">
+                                </div>
+                            </div>
+                            <div class="messageContainer">
+                                <label for="message" class="sr-only">Comment</label>
+                                <textarea name="message" id="message" placeholder="Message"></textarea>
+                            </div>
+                            <button type="submit">Post Comment</button>
+                        </form>
+                    </div>
+                </section>
+
+                <aside class="blogAside">
+                    <div class="asideImg">
+                        <img src="./assets/sidebar-image.jpg" alt="Draft beer being poured from a tap.">
+                    </div>
+                    <div class="blogAsideCopy">
                         <div>
-                            <div class="nameContainer">
-                                <label for="name" class="sr-only">Name</label>
-                                <input type="text" name="name" id="name" placeholder="Name">
-                            </div>
-                            <div class="emailContainer">
-                                <label for="email" class="sr-only">Email address</label>
-                                <input type="email" name="email" id="email" placeholder="Email address">
-                            </div>
+                            <h3>Our Mission</h3>
+                            <p>Nom dopibus nisi vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum!</p>
+                            <a href="#" class="accentColor">Find out more.</a>
                         </div>
-                        <div class="messageContainer">
-                            <label for="message" class="sr-only">Comment</label>
-                            <textarea name="message" id="message" placeholder="Message"></textarea>
-                        </div>
-                        <button type="submit">Post Comment</button>
-                    </form>
-                </div>
-            </section>
-
-            <aside class="blogAside">
-                <div class="asideImg">
-                    <img src="./assets/sidebar-image.jpg" alt="Draft beer being poured from a tap.">
-                </div>
-                <div class="blogAsideCopy">
-                    <div>
-                        <h3>Our Mission</h3>
-                        <p>Nom dopibus nisi vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum!</p>
-                        <a href="#" class="accentColor">Find out more.</a>
+                        <nav class="blogNav">
+                            <h3>Recent Posts</h3>
+                            <ul class="recentPosts">
+                                <li class="postItem"><a href="#">Lorem ipsum dolor sit.</a></li>
+                                <li class="postItem"><a href="#">Lorem ipsum dolor sit amet.</a></li>
+                                <li class="postItem"><a href="#">Lorem, ipsum dolor.</a></li>
+                                <li class="postItem"><a href="#">Lorem ipsum dolor sit elit.</a></li>
+                            </ul>
+                        </nav>
                     </div>
-                    <nav class="blogNav">
-                        <h3>Recent Posts</h3>
-                        <ul class="recentPosts">
-                            <li class="postItem"><a href="#">Lorem ipsum dolor sit.</a></li>
-                            <li class="postItem"><a href="#">Lorem ipsum dolor sit amet.</a></li>
-                            <li class="postItem"><a href="#">Lorem, ipsum dolor.</a></li>
-                            <li class="postItem"><a href="#">Lorem ipsum dolor sit elit.</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </aside>
+                </aside>
+            </div>
         </main>
         
         <footer>
