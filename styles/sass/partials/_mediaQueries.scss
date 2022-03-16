@@ -119,7 +119,7 @@
 
     .blogPage .blogCopy {
         box-shadow: none;
-        border-bottom: 0.5rem solid $accentColor;
+        border-bottom: 0.5rem solid var(--accentColor);
     }
 
     main .wrapper .blogAside .articleImg {
@@ -128,7 +128,7 @@
     }
 
     .blogAside {
-        background-color: $background2;
+        background-color: var(--background2);
 
         .blogAsideCopy {
             width: 80%;
@@ -227,6 +227,17 @@
         padding: 1rem 0;
     }
 
+
+    .titleContainer {
+        display: flex;
+
+    }
+
+    .titleContainer > div {
+        text-align: center;
+        max-width: 12rem;
+    }
+
     .mainH1 {
         font-size: 6rem;
     }
@@ -294,7 +305,7 @@
         padding: 2rem 0;
         margin: 0;
         border-left: none;
-        border-bottom: 5px solid $accentColor;
+        border-bottom: 5px solid var(--accentColor);
         }
 
 
@@ -362,7 +373,7 @@
 
     .contactPage .contactForm {
         margin: 0;
-        border-bottom: 1rem solid $accentColor;
+        border-bottom: 1rem solid var(--accentColor);
         box-shadow: none;
     }
 
