@@ -227,6 +227,17 @@
         padding: 1rem 0;
     }
 
+
+    .titleContainer {
+        display: flex;
+
+    }
+
+    .titleContainer > div {
+        text-align: center;
+        max-width: 12rem;
+    }
+
     .mainH1 {
         font-size: 6rem;
     }
